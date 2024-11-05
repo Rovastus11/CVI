@@ -1,5 +1,5 @@
 public class MilkDecorator extends CoffeeDecorator {
-    public MilkDecorator(Coffee decoratedCoffee) {
+    public MilkDecorator(CoffeeI decoratedCoffee) {
         super(decoratedCoffee);
     }
 

@@ -1,7 +1,7 @@
 public abstract class CoffeeDecorator implements CoffeeI {
-    protected Coffee decoratedCoffee;
+    protected CoffeeI decoratedCoffee;
 
-    public CoffeeDecorator(Coffee decoratedCoffee) {
+    public CoffeeDecorator(CoffeeI decoratedCoffee) {
         this.decoratedCoffee = decoratedCoffee;
     }
 
