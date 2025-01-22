@@ -5,6 +5,12 @@ public class Main {
 
         CoffeeI coffeeWithMilk = new MilkDecorator(new Coffee());
         System.out.println(printCoffee(coffeeWithMilk));
+
+        CoffeeI coffeeWithSugar = new SugarDecorator(new Coffee());
+        System.out.println(printCoffee(coffeeWithSugar));
+
+        CoffeeI coffeeWithSugarAndMilk = new SugarDecorator(coffeeWithMilk);
+        System.out.println(printCoffee(coffeeWithSugarAndMilk));
     }
 
     private static String printCoffee(CoffeeI coffee) {
